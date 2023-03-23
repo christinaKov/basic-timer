@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Time Is Precious</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/a918d07584.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<form action="">
+				<div class="input-container">
+					<label for="hours-input">hh</label>
+					<input type="text" name="" id="hours-input" />
+				</div>
+				<div class="input-container">
+					<label for="minutes-input">mm</label>
+					<input type="text" name="" id="minutes-input" />
+				</div>
+				<div class="input-container">
+					<label for="seconds-input">ss</label>
+					<input type="text" name="" id="seconds-input" />
+				</div>
+				<i class="is--hidden" id="warning-msg">
+					Пожалуйста, введите корректное значение
+				</i>
+			</form>
+			<div class="timer">
+				<p id="hours">01</p>
+				<p>:</p>
+				<p id="minutes">00</p>
+				<p>:</p>
+				<p id="seconds">00</p>
+			</div>
+			<div class="options">
+				<div class="toggle-btns">
+					<div>
+						<i id="play-btn" class="fa-solid fa-play"></i>
+					</div>
+					<div class="is--hidden">
+						<i id="pause-btn" class="fa-solid fa-pause"></i>
+					</div>
+				</div>
+				<i id="reset-btn" class="fa-solid fa-repeat"></i>
+			</div>
+		</main>
+		<script src="app.js"></script>
+	</body>
+</html>

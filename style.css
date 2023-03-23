@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Fira Sans", sans-serif;
+	color: rgb(54, 54, 54);
+}
+
+i {
+	cursor: pointer;
+}
+
+main {
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	padding-top: 7rem;
+	flex-direction: column;
+	background-image: linear-gradient(120deg, #a8edea 0%, #fed6e3 60%);
+}
+
+form {
+	position: relative;
+	width: 70vw;
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	height: 10rem;
+}
+
+.input-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input {
+	min-height: 3rem;
+	outline: none;
+	padding: 0.5rem 1.5rem;
+	text-align: center;
+	font-size: 2rem;
+	width: 100%;
+	border: none;
+	background: rgb(247, 245, 245);
+}
+
+label {
+	font-size: 2rem;
+	padding-bottom: 1rem;
+}
+
+#warning-msg {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	bottom: 0;
+	transition: opacity 0.2s ease-in-out;
+	font-size: 1.8rem;
+	font-weight: 300;
+}
+
+.is--hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.timer {
+	display: flex;
+	margin: 5rem;
+}
+
+.timer p {
+	font-size: 6rem;
+}
+
+.options {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.options i {
+	font-size: 3rem;
+	width: 3rem;
+}
+
+.toggle-btns {
+	position: relative;
+	width: 3rem;
+}
+
+.toggle-btns i {
+	position: absolute;
+	transition: opacity 0.2s ease-in-out;
+}
+
+@media (max-width: 700px) {
+	#warning-msg {
+		font-size: 1rem;
+	}
+
+	.timer {
+		margin: 3rem;
+	}
+
+	main {
+		padding-top: 5rem;
+	}
+}
